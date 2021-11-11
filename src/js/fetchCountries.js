@@ -2,7 +2,9 @@ import Notiflix from 'notiflix';
 import { countriesMarkup, oneCountryMarkup } from './markup';
 
 export const fetchCountries = function (name) {
-  fetch(`https://restcountries.com/v3.1/name/${name}`)
+  fetch(
+    `https://restcountries.com/v3.1/name/${name}?fields=name,flags,capital,population,languages`,
+  )
     .then(response => {
       if (!response.ok) {
         throw new Error(response.status);
