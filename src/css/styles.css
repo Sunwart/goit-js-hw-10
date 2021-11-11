@@ -3,13 +3,17 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #e2e2e2;
   color: #212121;
   line-height: 1.5;
+}
+
+img {
+  margin-right: 15px;
 }
 
 #search-box {
@@ -17,4 +21,17 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.country-list {
+  list-style: none;
+}
+
+.country-item {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-weight: bold;
 }
